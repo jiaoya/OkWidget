@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/viewLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgIntegral"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:visibility="visible" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="-"
+            android:textColor="@color/wt_FF2442"
+            android:textSize="@dimen/dp_15"
+            android:visibility="gone"
+            android:includeFontPadding="false" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="@dimen/dp_2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="¥"
+            android:textColor="@color/wt_FF2442"
+            android:textSize="@dimen/dp_15"
+            android:visibility="visible"
+            android:includeFontPadding="false" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/wt_FF2442"
+            android:textSize="@dimen/dp_15" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIntegralUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="积分"
+            android:textColor="@color/wt_FF2442"
+            android:textSize="@dimen/dp_12"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dp_3"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIntegralPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="+"
+            android:textColor="@color/wt_FF2442"
+            android:textSize="@dimen/dp_12"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dp_3" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvIntegralPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/wt_FF2442"
+            android:textSize="@dimen/dp_12"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/dp_3" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_6"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/wt_999999"
+        android:textSize="@dimen/dp_10" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="wt_333333">#333333</color>
+    <color name="wt_ff7575">#FF7575</color>
+    <color name="wt_cccccc">#CCCCCC</color>
+    <color name="wt_date_picker_text_light">@color/wt_333333</color>
+    <color name="wt_date_picker_text_dark">@color/wt_999999</color>
+
+    <color name="wt_999999">#999999</color>
+    <color name="wt_ff0000">#ff0000</color>
+    <color name="wt_white">#ffffff</color>
+    <color name="wt_selector_grey">#DDDDDD</color>
+
+    <color name="wt_FF2442">#FF2442</color>
+    <color name="wt_213cd5">#213cd5</color>
+    <color name="line_e5e5e5">#E5E5E5</color>
+
+</resources>

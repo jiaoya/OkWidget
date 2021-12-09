@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!---->
+    <declare-styleable name="TitleBar">
+        <attr name="title" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="leftSrc" format="reference" />
+
+        <attr name="rightSrc" format="reference" />
+        <attr name="rightImg2Src" format="reference" />
+
+        <attr name="rightSrcVisibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+
+        <attr name="rightImg2Visibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+
+        <attr name="rightTitle" format="string" />
+        <attr name="rightTitleColor" format="color" />
+        <attr name="rightTitleSize" format="dimension" />
+        <attr name="rightTitleVisibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="lineVisibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="0" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!---->
+    <declare-styleable name="SmsStateBtn">
+        <attr name="colorCountDown" format="color" />
+        <attr name="count" format="integer" />
+    </declare-styleable>
+
+    <!---->
+    <declare-styleable name="SideslipMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <!---->
+    <declare-styleable name="FluidLayout">
+        <attr name="gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="FluidLayout_Layout">
+        <attr name="layout_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+
+    <!---->
+    <declare-styleable name="RoundImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="corner_radius_top_left" format="dimension" />
+        <attr name="corner_radius_top_right" format="dimension" />
+        <attr name="corner_radius_bottom_left" format="dimension" />
+        <attr name="corner_radius_bottom_right" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <!---->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!---->
+    <declare-styleable name="BottomBarItem">
+        <!--默认状态下的图标-->
+        <attr name="iconNormal" format="reference" />
+        <!--选中状态下的图标-->
+        <attr name="iconSelected" format="reference" />
+
+        <!--底部文字-->
+        <attr name="itemText" format="string" />
+        <!--文字大小-->
+        <attr name="itemTextSize" format="dimension" />
+        <!--默认状态下的文字颜色-->
+        <attr name="textColorNormal" format="color" />
+        <!--选中状态下的文字颜色-->
+        <attr name="textColorSelected" format="color" />
+
+        <!--文字和图标的顶部距离-->
+        <attr name="itemMarginTop" format="dimension" />
+
+        <!--是否开启触摸背景效果-->
+        <attr name="openTouchBg" format="boolean" />
+        <!--设置触摸背景-->
+        <attr name="touchDrawable" format="reference" />
+
+        <!--设置图标的宽度-->
+        <attr name="iconWidth" format="dimension" />
+        <!--设置图标的高度-->
+        <attr name="iconHeight" format="dimension" />
+
+        <!--设置BottomBarItem的padding-->
+        <attr name="itemPadding" format="dimension" />
+
+        <!--设置未读数字体大小-->
+        <attr name="unreadTextSize" format="dimension" />
+        <!--设置未读数字体颜色-->
+        <attr name="unreadTextColor" format="reference" />
+        <!--设置未读数背景色-->
+        <attr name="unreadTextBg" format="reference" />
+
+        <!--设置提示消息字体大小-->
+        <attr name="msgTextSize" format="dimension" />
+        <!--设置提示消息字体颜色-->
+        <attr name="msgTextColor" format="reference" />
+        <!--设置提示消息背景-->
+        <attr name="msgTextBg" format="reference" />
+
+        <!--设置提示点背景-->
+        <attr name="notifyPointBg" format="reference" />
+
+        <!--设置未读数组阈值 大于阈值的数字将显示为 n+ n为设置的阈值-->
+        <attr name="unreadThreshold" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomBarLayout">
+        <attr name="smoothScroll" format="boolean" />
+    </declare-styleable>
+
+    <!--圆形倒计时-->
+    <declare-styleable name="CircleProgress">
+        <attr name="betaAngle" format="integer" />
+        <attr name="bgColor" format="color" />
+        <!--倒计时圆形宽度-->
+        <attr name="borderWidth" format="dimension" />
+        <!--倒计时圆形颜色-->
+        <attr name="borderColor" format="color" />
+        <!--文字大小-->
+        <attr name="centerTextSize" format="dimension" />
+        <!--文字颜色-->
+        <attr name="centerTextColor" format="color" />
+        <!--是否允许渐变色-->
+        <attr name="isShowGradient" format="boolean" />
+    </declare-styleable>
+
+
+    <!--通用缺省页-->
+    <declare-styleable name="ErrorView">
+        <attr name="errorBackground" format="reference|color" />
+        <attr name="errorTitle" format="string" />
+        <attr name="errorTitleColor" format="color" />
+
+        <attr name="errorTitleSize" format="dimension" />
+        <attr name="errorSrc" format="reference|color" />
+        <attr name="errorImgWidth" format="dimension" />
+
+        <attr name="errorSubTitle" format="string" />
+        <attr name="errorSubTitleColor" format="color" />
+        <attr name="errorSubTitleSize" format="dimension" />
+        <attr name="errorSubTitleVisibility">
+            <!-- Visible on screen; the default value. -->
+            <enum name="visible" value="2" />
+            <!-- Not displayed, but taken into account during layout (space is left for it). -->
+            <enum name="invisible" value="1" />
+            <!-- Completely hidden, as if the view had not been added. -->
+            <enum name="gone" value="0" />
+        </attr>
+        <attr name="errorBtnStr" format="string" />
+    </declare-styleable>
+
+    <!--商城倒计时-->
+    <declare-styleable name="TimeCountDownView">
+        <attr name="second" format="integer" />
+        <attr name="textBackground" format="reference|color" />
+        <attr name="textColor" format="color" />
+        <attr name="textDayColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textPaddiing" format="dimension" />
+        <attr name="pointColor" format="reference|color" />
+    </declare-styleable>
+
+    <!--价格标签-->
+    <declare-styleable name="AppCompatPriceView">
+        <attr name="unit" format="string" />                        <!--单位-->
+        <attr name="integralUnit" format="string" />                <!--积分单位-->
+        <attr name="price" format="float" />                        <!--主价格-->
+        <attr name="oldPrice" format="float" />                     <!--划线价-->
+        <attr name="integral" format="integer" />                   <!--积分-->
+        <attr name="isIntegral" format="boolean" />                 <!--是否积分价格-->
+        <attr name="priceTextColor" format="color" />               <!--主价格字体颜色-->
+        <attr name="oldPriceTextColor" format="color" />            <!--划线价字体颜色-->
+        <attr name="priceTextSize" format="dimension" />            <!--主价格字体大小-->
+        <attr name="pricePointTextSize" format="dimension" />       <!--主价格小数点部分字体大小-->
+        <attr name="oldPriceTextSize" format="dimension" />         <!--划线价字体大小-->
+        <attr name="priceTextMargin" format="dimension" />          <!--主价格与划线价间距(横向布局生效)-->
+        <attr name="priceTransition" format="float" />              <!--整数与小数字体大小的倍数关系-->
+        <attr name="orientation">                                   <!--价格展示方向（横向、竖向）-->
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0" />
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="priceTextBold" format="boolean" />              <!--是否加粗-->
+        <attr name="showLeftPrice" format="boolean" />              <!--是否展示左侧价格（可用于只展示划线价）-->
+        <attr name="showLeftNegative" format="boolean" />           <!--是否展示左侧减号-->
+
+        <attr name="integralSrc" format="integer" />                <!--积分图标-->
+        <attr name="unitTextSize" format="dimension" />             <!--主价格单位的字体大小-->
+        <attr name="integralPriceTextSize" format="dimension" />    <!--积分+钱，金额的字体大小-->
+        <attr name="integralPriceTextColor" format="color" />       <!--积分+钱，金额的字体颜色-->
+        <attr name="unitMargin" format="dimension" />               <!--主价格单位的右间距-->
+        <attr name="integralUnitLeftMargin" format="dimension" />   <!--积分单位的左间距-->
+        <attr name="plusLeftMargin" format="dimension" />           <!--加号的左间距-->
+        <attr name="integralPriceLeftMargin" format="dimension" />           <!--加号的左间距-->
+
+        <attr name="plusTextSize" format="dimension" />             <!--加号字体大小-->
+        <attr name="plusTextColor" format="color" />                <!--加号字体颜色-->
+
+        <attr name="integralUnitTextSize" format="dimension" />             <!--加号字体大小-->
+        <attr name="integralUnitTextColor" format="color" />                <!--加号字体颜色-->
+
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularProgressView">
+        <attr name="backWidth" format="dimension" />    <!--背景圆环宽度-->
+        <attr name="progWidth" format="dimension" />    <!--进度圆环宽度-->
+        <attr name="backColor" format="color" />        <!--背景圆环颜色-->
+        <attr name="progColor" format="color" />        <!--进度圆环颜色-->
+        <attr name="progStartColor" format="color" />   <!--进度圆环开始颜色-->
+        <attr name="progFirstColor" format="color" />   <!--进度圆环结束颜色-->
+        <attr name="progress" format="integer" />       <!--圆环进度-->
+    </declare-styleable>
+
+</resources>

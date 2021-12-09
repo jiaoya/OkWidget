@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimeDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/wt_333333"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:text="0天"
+        android:layout_marginRight="@dimen/dp_3"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimeHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/wt_white"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:background="@drawable/shape_rectangle_r2_ff2442"
+        android:paddingLeft="@dimen/dp_4"
+        android:paddingRight="@dimen/dp_4"
+        android:text="00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPoint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/wt_FF2442"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:text=":"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimeMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/wt_white"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:background="@drawable/shape_rectangle_r2_ff2442"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_4"
+        android:text="00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPoint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/wt_FF2442"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:text=":"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimeSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp_14"
+        android:textColor="@color/wt_white"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:background="@drawable/shape_rectangle_r2_ff2442"
+        android:paddingLeft="@dimen/dp_3"
+        android:paddingRight="@dimen/dp_4"
+        android:text="00" />
+
+
+</LinearLayout>
